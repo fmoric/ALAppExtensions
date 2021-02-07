@@ -3,11 +3,11 @@ codeunit 1571 "Certificate Signing Impl"
     Access = Internal;
     procedure SetSignedXML(Xml: Text)
     var
-        XMLDocument: DotNet XmlDocument;
+        XMLDoc: DotNet XmlDocument;
     begin
-        XMLDocument := XMLDocument.XmlDocument();
-        XMLDocument.LoadXml(Xml);
-        SignedXml := SignedXml.SignedXml(XMLDocument);
+        XMLDoc := XMLDoc.XmlDocument();
+        XMLDoc.LoadXml(Xml);
+        SignedXml := SignedXml.SignedXml(XMLDoc);
     end;
 
     [NonDebuggable]

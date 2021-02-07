@@ -72,7 +72,7 @@ codeunit 3703 "Server Setting Impl."
     procedure GetTestAutomationEnabled() Enabled: Boolean
     begin
         InitializeConfigSettings();
-        Enabled := ALConfigSettings.TestAutomationEnabled();
+        // Enabled := ALConfigSettings.TestAutomationEnabled();
         exit(Enabled);
     end;
 }
